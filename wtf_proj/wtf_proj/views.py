@@ -16,7 +16,7 @@ def home(request):
 
 
 def about(request):
-    return render(request, "about.html", context={})
+    return render(request, "about.html", context={"term": "about_page"})
 
 
 
