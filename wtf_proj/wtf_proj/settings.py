@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'wtf_proj.urls'
@@ -125,3 +126,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = join(BASE_DIR, "staticfiles")
+WHITENOISE_ROOT = join(BASE_DIR, "basic_files")
