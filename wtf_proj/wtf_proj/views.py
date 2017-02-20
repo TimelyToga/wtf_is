@@ -19,7 +19,6 @@ def about(request):
     return render(request, "about.html", context={"term": "about_page"})
 
 
-
 def definition(request, term):
     context = {"term": term, "link": WIKI_PAGE_BASE + term}
 
