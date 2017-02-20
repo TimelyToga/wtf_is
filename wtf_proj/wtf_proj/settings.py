@@ -128,9 +128,10 @@ STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
 STATIC_URL = STATIC_HOST + '/static/'
 
 STATIC_ROOT = join(BASE_DIR, "staticfiles")
+UNCOLLECTED_STATIC_ROOT = join(BASE_DIR, "uncollected_static")
 
 STATICFILES_DIRS = (
-    STATIC_ROOT,
+    UNCOLLECTED_STATIC_ROOT,
 )
 
 WHITENOISE_ROOT = join(BASE_DIR, "basic_files")
