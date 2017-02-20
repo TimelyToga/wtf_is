@@ -1,1 +1,1 @@
-web: gunicorn --chdir app/ wtf_is.wsgi --log-file -
+web: gunicorn --chdir wtf_proj/ wtf_is.wsgi --log-file -
