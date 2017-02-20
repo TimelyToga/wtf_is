@@ -1,0 +1,46 @@
+.navbar {
+    margin: 20px;
+}
+
+h1 {
+    display: inline-block;
+}
+
+#m_search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#m_search > input {
+    height: 50px;
+    font-size: 20pt;
+    margin: 40px 2px;
+}
+
+#search_box {
+    width: 60%;
+}
+
+.navlist {
+    list-style: none;
+    float: right;
+    display: inline-block;
+}
+
+.navlist > li {
+    font-size: 16pt;
+    height: 100%;
+    float: left;
+    margin: 0 15px;
+}
+
+.navlist > li > a{
+    text-decoration: none;
+    height: 100%;
+    color: teal;
+}
+
+.navlist > li:hover * {
+    color: lightseagreen;
+}
