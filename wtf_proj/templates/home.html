@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>When you want to find out wtf something is...</p>
+
+    <div id="search_block">
+        <form action="/search/">
+            <input type="text" name="search" placeholder="WTF is.."/>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>WTF is {{ term }}</title>
+{% endblock title %}
+
+{% block content %}
+    <h1>WTF is {{ term }}?</h1>
+
+    <h2><a href="{{ link }}">From Wikipedia:</a></h2>
+    <p>{{ def | safe }}</p>
+{% endblock content %}
