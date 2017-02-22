@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^is/([a-zA-z0-9_ ]*)', views.definition),
     url(r'^search/$', views.search),
+    url(r'^search_results/$', views.search_for_results),
     url(r'^about/$', views.about),
     url(r'^$', views.home),
 ]

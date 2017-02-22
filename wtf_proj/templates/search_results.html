@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title>WTF is {{ term }}</title>
+{% endblock title %}
+
+{% block content %}
+    <div id="search_results">
+        <h1>Search Results</h1>
+
+        {% if failed_search %}
+            <h3>Sorry, your search for {{ term }} yielded no results. I honestly don't know what to say...</h3>
+        {% else %}
+        <ul id="search_result_list">
+            {% for result in results %}
+                <li>
+                    <a href="/search/?search={{ result.title }}">{{ result.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+    </div>
+{% endblock content %}
